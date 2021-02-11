@@ -19,13 +19,15 @@ const upload = multer({
 
 router.post("/api/portfolio", upload.single("image"), async (req, res) => {
 	const { title, github, project_link, description } = req.body;
-	const technology = Object.keys(req.body).slice(4);
+	const technology = Object.keys(req.body)
+		.slice(4)
+		.forEach(tech => _.capitalize(tech));
 	let image;
 
 	try {
 		if (req.file) {
 			image = await sharp(req.file.buffer)
-				.resize({ width: 250 })
+				.resize({ width: 375 })
 				.png()
 				.toBuffer();
 		}
@@ -64,19 +66,19 @@ router.patch("/api/portfolio/:id", upload.single("image"), async (req, res) => {
 	try {
 		if (req.file) {
 			image = await sharp(req.file.buffer)
-				.resize({ width: 250 })
+				.resize({ width: 375 })
 				.png()
 				.toBuffer();
-		}
 
-		await Project.updateOne({ _id }, { $set: { image } });
+			await Project.updateOne({ _id }, { $set: { image } });
+		}
 
 		let technology = [];
 
 		_.forEach(updates, async (entry, entryKey) => {
 			if (entryKey.includes("edit")) {
 				const property = entryKey.replace("edit-", "");
-				technology.push(property);
+				technology.push(_.capitalize(property));
 			} else if (entry) {
 				await Project.updateOne({ _id }, { $set: { [entryKey]: entry } });
 			}
