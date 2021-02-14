@@ -1,0 +1,9 @@
+.grid-sizer,
+.grid-item {
+	float: left;
+	width: 300px;
+}
+
+#my-projects {
+	margin: 0 auto;
+}

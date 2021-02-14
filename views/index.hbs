@@ -1,156 +1,161 @@
-<h1>Portfolio Manager</h1>
+<div class='container'>
+    <h1 class='main-header center-align'>Portfolio Manager</h1>
 
-<!-- Add Project Form -->
-<form enctype="multipart/form-data" id='new-project-form' class="row">
-    <div class="input-field col s12">
-        <input id="title" type="text" name="title">
-        <label for="title">Title</label>
-    </div>
-    <div class="input-field col s12">
-        <input id="github" type="text" name="github">
-        <label for="github">GitHub Link</label>
-    </div>
-    <div class="input-field col s12">
-        <input id="project_link" type="text" name="project_link">
-        <label for="project_link">Project Link</label>
-    </div>
-    <div class="input-field col s12">
-        <input id="description" type="text" name="description">
-        <label for="description">Description</label>
-    </div>
-
-    <h5>Technology Used</h5>
-    <div class='row'>
-        <div class='col s6'>
-            <p>
-                <label for="jquery">
-                    <input id='jquery' name='jquery' type="checkbox" />
-                    <span>jQuery</span>
-                </label>
-            </p>
-            <p>
-                <label for='react'>
-                    <input id='react' name='react' type="checkbox" />
-                    <span>React</span>
-                </label>
-            </p>
-            <p>
-                <label for='redux'>
-                    <input id='redux' name='redux' type="checkbox" />
-                    <span>Redux</span>
-                </label>
-            </p>
-            <p>
-                <label for='node'>
-                    <input id='node' name='node' type="checkbox" />
-                    <span>Node</span>
-                </label>
-            </p>
-            <p>
-                <label for='mongodb'>
-                    <input id='mongodb' name='mongodb' type="checkbox" />
-                    <span>MongoDB</span>
-                </label>
-            </p>
-            <p>
-                <label for='mongoose'>
-                    <input id='mongoose' name='mongoose' type="checkbox" />
-                    <span>Mongoose</span>
-                </label>
-            </p>
-            <p>
-                <label for='express'>
-                    <input id='express' name='express' type="checkbox" />
-                    <span>Express</span>
-                </label>
-            </p>
+    <!-- Add Project Form -->
+    <form enctype="multipart/form-data" id='new-project-form' class="row">
+        <div class="input-field col s12">
+            <input id="title" type="text" name="title">
+            <label for="title">Title</label>
         </div>
-        <div class='col s6'>
-            <p>
-                <label for='sql'>
-                    <input id='sql' name='sql' type="checkbox" />
-                    <span>SQL</span>
-                </label>
-            </p>
-            <p>
-                <label for='mysql'>
-                    <input id='mysql' name='mysql' type="checkbox" />
-                    <span>mySQL</span>
-                </label>
-            </p>
-            <p>
-                <label for='sequelize'>
-                    <input id='sequelize' name='sequelize' type="checkbox" />
-                    <span>Sequelize</span>
-                </label>
-            </p>
-            <p>
-                <label for='passport'>
-                    <input id='passport' name='passport' type="checkbox" />
-                    <span>Passport</span>
-                </label>
-            </p>
-            <p>
-                <label for='jest'>
-                    <input id='jest' name='jest' type="checkbox" />
-                    <span>Jest</span>
-                </label>
-            </p>
-            <p>
-                <label for='enzyme'>
-                    <input id='enzyme' name='enzyme' type="checkbox" />
-                    <span>Enzyme</span>
-                </label>
-            </p>
-            <p>
-                <label for='handlebars'>
-                    <input id='handlebars' name='handlebars' type="checkbox" />
-                    <span>Handlebars</span>
-                </label>
-            </p>
+        <div class="input-field col s12">
+            <input id="github" type="text" name="github">
+            <label for="github">GitHub Link</label>
         </div>
-    </div>
+        <div class="input-field col s12">
+            <input id="project_link" type="text" name="project_link">
+            <label for="project_link">Project Link</label>
+        </div>
+        <div class="input-field col s12">
+            <input id="description" type="text" name="description">
+            <label for="description">Description</label>
+        </div>
+
+        <h2 class='technology-header'>Technology Used</h2>
+        <div class='row'>
+            <div class='col s6'>
+                <p>
+                    <label for="jquery">
+                        <input id='jquery' name='jquery' type="checkbox" />
+                        <span>jQuery</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='react'>
+                        <input id='react' name='react' type="checkbox" />
+                        <span>React</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='redux'>
+                        <input id='redux' name='redux' type="checkbox" />
+                        <span>Redux</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='node'>
+                        <input id='node' name='node' type="checkbox" />
+                        <span>Node</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='mongodb'>
+                        <input id='mongodb' name='mongodb' type="checkbox" />
+                        <span>MongoDB</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='mongoose'>
+                        <input id='mongoose' name='mongoose' type="checkbox" />
+                        <span>Mongoose</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='express'>
+                        <input id='express' name='express' type="checkbox" />
+                        <span>Express</span>
+                    </label>
+                </p>
+            </div>
+            <div class='col s6'>
+                <p>
+                    <label for='sql'>
+                        <input id='sql' name='sql' type="checkbox" />
+                        <span>SQL</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='mysql'>
+                        <input id='mysql' name='mysql' type="checkbox" />
+                        <span>mySQL</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='sequelize'>
+                        <input id='sequelize' name='sequelize' type="checkbox" />
+                        <span>Sequelize</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='passport'>
+                        <input id='passport' name='passport' type="checkbox" />
+                        <span>Passport</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='jest'>
+                        <input id='jest' name='jest' type="checkbox" />
+                        <span>Jest</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='enzyme'>
+                        <input id='enzyme' name='enzyme' type="checkbox" />
+                        <span>Enzyme</span>
+                    </label>
+                </p>
+                <p>
+                    <label for='handlebars'>
+                        <input id='handlebars' name='handlebars' type="checkbox" />
+                        <span>Handlebars</span>
+                    </label>
+                </p>
+            </div>
+        </div>
 
 
 
-    <div class="file-field input-field">
-        <div class="btn">
-            <span>Image</span>
-            <input type="file" name="image">
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>Image</span>
+                <input type="file" name="image">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+            </div>
         </div>
-        <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
+
+        <div class='row'>
+            <button id="submitBtn" class="btn waves-effect waves-light col m4 s12 offset-m4" type="submit"
+                name="action">Submit
+            </button>
         </div>
-    </div>
-    <button id="submitBtn" class="btn waves-effect waves-light" type="submit" name="action">Submit
-        <i class="material-icons right">send</i>
-    </button>
-</form>
+    </form>
+</div>
 
 <!-- Project List -->
-<div>
+<div id='my-projects' class='grid'>
+    <div class="grid-sizer"></div>
+
     {{#each projects}}
-    <div class="row">
-        <div class="col s12 m6">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">{{title}}</span>
-                    <p>{{description}}</p>
-                    <p>{{github}}</p>
-                    <p>{{project_link}}</p>
-                    <h6>Technologies:</h6>
-                    <ul>
-                        {{#each technology}}
-                        <li>{{this}}</li>
-                        {{/each}}
-                    </ul>
-                </div>
-                <div class="card-action">
-                    <a data-id="{{this._id}}" class="modal-trigger yellow-text text-darken-3 edit-btn"
-                        href="#editModal">Edit</a>
-                    <a data-id="{{this._id}}" class="modal-trigger yellow-text text-darken-3 right delete-btn"
-                        href="#deleteModal">Delete</a>
-                </div>
+    <div class="grid-item">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">{{title}}</span>
+                <p>{{description}}</p>
+                <p>{{github}}</p>
+                <p>{{project_link}}</p>
+                <h6>Technologies:</h6>
+                <ul>
+                    {{#each technology}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="card-action">
+                <a data-id="{{this._id}}" class="modal-trigger yellow-text text-darken-3 edit-btn"
+                    href="#editModal">Edit</a>
+                <a data-id="{{this._id}}" class="modal-trigger yellow-text text-darken-3 right delete-btn"
+                    href="#deleteModal">Delete</a>
             </div>
         </div>
     </div>

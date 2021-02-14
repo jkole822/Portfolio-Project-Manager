@@ -75,4 +75,22 @@ $(document).ready(function () {
 			},
 		});
 	});
+
+	$(".grid").masonry({
+		itemSelector: ".grid-item",
+		columnWidth: ".grid-sizer",
+		gutter: 10,
+	});
+
+	const resizeProjectContainer = () => {
+		const windowWidth = $(window).width();
+		const imagesPerRow = Math.floor(windowWidth / 310);
+		$("#my-projects").width(imagesPerRow * 310);
+	};
+
+	resizeProjectContainer();
+
+	$(window).resize(() => {
+		resizeProjectContainer();
+	});
 });
