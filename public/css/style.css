@@ -1,3 +1,9 @@
+html {
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+}
+
+/* Masonry START */
 .grid-sizer,
 .grid-item {
 	float: left;
@@ -7,3 +13,43 @@
 #my-projects {
 	margin: 0 auto;
 }
+/* Masonry END */
+
+/* Headers START  */
+.main-header {
+	font-size: 3rem;
+	font-family: "Righteous", cursive;
+}
+
+.technology-header {
+	font-size: 1.5rem;
+}
+
+.modal-header {
+	font-size: 2rem;
+}
+
+.card-title {
+	font-family: "Righteous", cursive;
+}
+/* Headers END */
+
+/* Form START */
+input {
+	color: #e0f7fa;
+	border-bottom-color: #b2ebf2 !important;
+}
+
+label {
+	color: #b2ebf2 !important;
+}
+
+.input-field input:focus + label {
+	color: #e0f7fa !important;
+}
+
+.row .input-field input:focus {
+	border-bottom: 1px solid #e0f7fa !important;
+	box-shadow: 0 1px 0 0 #e0f7fa !important;
+}
+/* Form END */
