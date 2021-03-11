@@ -21,7 +21,7 @@ router.post("/api/portfolio", upload.single("image"), async (req, res) => {
 	const { title, github, project_link, description } = req.body;
 	const technology = Object.keys(req.body)
 		.slice(4)
-		.forEach(tech => _.capitalize(tech));
+		.map(tech => _.capitalize(tech));
 	let image;
 
 	try {
